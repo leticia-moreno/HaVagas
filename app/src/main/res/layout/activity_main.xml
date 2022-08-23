@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+    >
+
+    <EditText
+        android:id="@+id/nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nome_completo"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/telefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefone"
+        android:inputType="phone" />
+
+    <CheckBox
+        android:id="@+id/checkCel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/celular" />
+
+    <EditText
+        android:id="@+id/celular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telefone_celular"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/checkEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingressar" />
+
+    <RadioGroup
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/mascBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/masculino" />
+
+        <RadioButton
+            android:id="@+id/femBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/feminino" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/formacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/formacao" />
+
+    <EditText
+        android:id="@+id/anoFormatura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/formatura"
+        android:visibility="visible"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/conclusao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/conclusao"
+        android:visibility="gone"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/instituicao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/instituicao"
+        android:visibility="gone"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/tituloMonografia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/monografia"
+        android:visibility="gone"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/orientador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/orientador"
+        android:inputType="textPersonName"
+        android:visibility="gone"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/vaga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/vagas"
+        android:importantForAutofill="no" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/botaoSalvar"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:text="@string/salvar"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/botaoLimpar"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/limpar"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
